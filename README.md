@@ -1,16 +1,44 @@
-# trizion_car_rental
+# 🚗 Trizion Car Rental – Flutter App
 
-A new Flutter project.
+A simple multi-screen **Car Rental Booking App (MVP)** built using **Flutter & Riverpod** as part of the Trizion Flutter Developer assignment.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- Welcome & Login and register name and mob number  (Mock authentication)
+- Car list using local mock data
+- Car detail page with pricing and specs
+- Booking form (name, location, date range)
+- Booking confirmation 
+- Local persistence using SharedPreferences
+- Clean architecture with feature-based folder structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- Flutter
+- Riverpod (State Management)
+- SharedPreferences (Local storage)
+- Material & Cupertino UI
+- Intl package (Date formatting)
+
+---
+
+## 📂 Folder Structure
+
+```plaintext
+lib/
+├── data/
+│   └── mock_data.dart
+├── models/
+│   ├── car.dart
+│   └── booking.dart
+├── features/
+│   ├── auth/
+│   ├── cars/
+│   ├── booking/
+│   └── widgets/
+├── main.dart
+└── app.dart
