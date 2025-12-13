@@ -1,0 +1,44 @@
+name: trizion_car_rental
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  intl: ^0.18.1
+
+
+  # ---- Added for this project ----
+  flutter_riverpod: ^2.5.1   # State management
+  uuid: ^4.4.0
+  # Unique IDs for bookings
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.1
+  fluttertoast: ^8.2.4
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Uncomment when adding assets
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+
+  # Uncomment when adding custom fonts
+  # fonts:
+  #   - family: MyFont
+  #     fonts:
+  #       - asset: assets/fonts/MyFont-Regular.ttf
+  #       - asset: assets/fonts/MyFont-Bold.ttf
+  #         weight: 700
