@@ -19,29 +19,25 @@ class Car {
     required this.description,
   });
 
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'name': name,
-      'imageUrl': imageUrl,
-      'category': category,
-      'seats': seats,
-      'pricePerDay': pricePerDay,
-      'available': available,
-      'description': description,
-    };
-  }
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'name': name,
+    'imageUrl': imageUrl,
+    'category': category,
+    'seats': seats,
+    'pricePerDay': pricePerDay,
+    'available': available,
+    'description': description,
+  };
 
-  factory Car.fromJson(Map<String, dynamic> json) {
-    return Car(
-      id: json['id'],
-      name: json['name'],
-      imageUrl: json['imageUrl'],
-      category: json['category'],
-      seats: json['seats'],
-      pricePerDay: (json['pricePerDay'] as num).toDouble(),
-      available: json['available'],
-      description: json['description'],
-    );
-  }
+  factory Car.fromJson(Map<String, dynamic> json) => Car(
+    id: json['id'],
+    name: json['name'],
+    imageUrl: json['imageUrl'],
+    category: json['category'],
+    seats: json['seats'],
+    pricePerDay: (json['pricePerDay'] as num).toDouble(),
+    available: json['available'],
+    description: json['description'],
+  );
 }

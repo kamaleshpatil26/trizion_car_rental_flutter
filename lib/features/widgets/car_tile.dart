@@ -1,7 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import '../../models/car.dart';
-import '../cars/car_detail_page.dart';
+import 'package:trizion_car_rental/features/cars/car_detail_page.dart';
+import 'package:trizion_car_rental/models/car.dart';
+
 
 class GlassCarTile extends StatelessWidget {
   final Car car;

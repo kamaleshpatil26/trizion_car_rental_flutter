@@ -23,7 +23,7 @@ class CarListPage extends ConsumerWidget {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0F2027), Color(0xFF203A43), Color(0xFF2C5364)],
+            colors: [Color(0xFF15313B), Color(0xFF2B5057), Color(0xFF2C5364)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
